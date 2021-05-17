@@ -1,0 +1,701 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "pineapple";
+  src: url("../fonts/pineapple.eot?25uk2a");
+  src: url("../fonts/pineapple.eot?25uk2a#iefix") format("embedded-opentype"), url("../fonts/pineapple.ttf?25uk2a") format("truetype"), url("../fonts/pineapple.woff?25uk2a") format("woff"), url("../fonts/pineapple.svg?25uk2a#pineapple") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="pine-"],
+[class*=" pine-"] {
+  font-family: "pineapple" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pine-success .path1:before {
+  content: "";
+  color: #4066a5;
+}
+
+.pine-success .path2:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+}
+
+.pine-success .path3:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.pine-success .path4:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.pine-success .path5:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.pine-success .path6:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.pine-success .path7:before {
+  content: "";
+  margin-left: -0.62890625em;
+  color: #4066a5;
+  opacity: 0.3;
+}
+
+.pine-info:before {
+  content: "";
+  color: #D42A28;
+}
+
+.pine-instagram .path1:before {
+  content: "";
+  color: transparent;
+}
+
+.pine-instagram .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #131821;
+  opacity: 0.3;
+}
+
+.pine-instagram .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #e2e3e4;
+}
+
+.pine-facebook .path1:before {
+  content: "";
+  color: transparent;
+}
+
+.pine-facebook .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #e2e3e4;
+}
+
+.pine-facebook .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #131821;
+  opacity: 0.3;
+}
+
+.pine-twitter .path1:before {
+  content: "";
+  color: transparent;
+}
+
+.pine-twitter .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #e2e3e4;
+}
+
+.pine-twitter .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #131821;
+  opacity: 0.3;
+}
+
+.pine-youtube .path1:before {
+  content: "";
+  color: transparent;
+}
+
+.pine-youtube .path2:before {
+  content: "";
+  margin-left: -1em;
+  color: #e2e3e4;
+}
+
+.pine-youtube .path3:before {
+  content: "";
+  margin-left: -1em;
+  color: #131821;
+  opacity: 0.3;
+}
+
+.pine-logo-text:before {
+  content: "";
+}
+
+.pine-check:before {
+  content: "";
+  color: #fff;
+}
+
+.pine-arrow:before {
+  content: "7";
+}
+
+.grey-text {
+  color: #6A707B;
+  font-weight: 400;
+}
+
+.disabled-arrow {
+  color: #f2f5fa !important;
+}
+
+.enabled-arrow {
+  color: rgba(19, 24, 33, 0.3);
+}
+
+@media (max-width: 329px) {
+  #content {
+    padding: 0;
+  }
+}
+
+@media (min-width: 801px) {
+  html body {
+    font-size: 16px;
+  }
+  html body main div.content-container div.content h2.header {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 70% !important;
+  }
+  html body {
+    display: flex;
+    font-size: 12px;
+  }
+  html body main {
+    width: 42.5rem;
+    background: linear-gradient(white 25%, #F2F5FA 75%) fixed;
+  }
+  html body main header {
+    padding: 6.25rem 3rem 0 6.25rem;
+    height: auto;
+    width: 100%;
+  }
+  html body main header img.logo-text {
+    display: block;
+    padding: .625rem 0 0 0.9375rem;
+  }
+  html body main header ul.nav {
+    padding-top: .5rem;
+  }
+  html body main header ul.nav .about-link,
+  html body main header ul.nav .how-link {
+    padding-right: 1.625rem;
+  }
+  html body main div.content-container {
+    padding: 0;
+    height: calc(100% - 9.0625rem);
+  }
+  html body main div.content-container div.content {
+    background: 0;
+    padding: 1.125rem 0 0 8.75rem;
+  }
+  html body main div.content-container div.content h2.header {
+    font-size: 24px;
+    padding-bottom: 1.125rem;
+  }
+  html body main div.content-container div.content p.info {
+    line-height: 1.8125rem;
+    padding-bottom: 3.0625rem;
+  }
+  html body main div.content-container div.content p.sucs-info::after {
+    white-space: pre;
+    content: "You have successfully subscribed to our email listing. \a Check your email for the discount code.";
+  }
+  html body main div.content-container div.content form.send-mail div.input {
+    height: 4.375rem;
+    width: 41.4375rem;
+    margin: 0 0 1.65625rem -2.5rem;
+  }
+  html body main div.content-container div.content form.send-mail div.input input.mail {
+    padding-left: 1.5625rem;
+  }
+  html body main div.content-container div.content form.send-mail div.input button.send {
+    padding-right: 1.5625rem;
+  }
+  html body main div.content-container div.content form.send-mail div.spacer {
+    padding-bottom: 1.65625rem;
+  }
+  html body main div.content-container div.content form.send-mail .terms-check {
+    padding-bottom: 3.125rem;
+  }
+  html body main div.content-container div.content form.send-mail .terms-check .terms-text {
+    font-size: 14px;
+  }
+  html body main div.content-container div.content div.separator {
+    width: 25rem;
+    margin-bottom: 3.25rem;
+  }
+  html body main div.content-container div.content ul.social-nav {
+    gap: 1.25rem;
+    padding: 0 8.875rem 0 0;
+  }
+  html body main div.content-container div.content ul.social-nav li {
+    font-size: calc(46px - 10%);
+  }
+  html body main div.content-container div.content br {
+    display: block;
+  }
+  html body div.background {
+    position: static;
+    flex: 1 1;
+    background-position-x: 0;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1300px) {
+  html {
+    font-size: 85% !important;
+  }
+  html body {
+    font-size: 15px;
+  }
+  html body main div.content-container div.content h2.header {
+    font-size: 30px;
+  }
+  html body main div.content-container div.content form.send-mail div.terms-check label.terms-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 100% !important;
+  }
+  html body {
+    font-size: 16px;
+  }
+  html body main header {
+    padding: 6.25rem 6.3125rem 0 6.25rem;
+  }
+  html body main div.content-container div.content form.send-mail div.terms-check label.terms-text {
+    font-size: 16px;
+  }
+  html body main div.content-container div.content h2.header {
+    font-size: 32px;
+  }
+  html body main div.content-container div.content ul.social-nav li {
+    font-size: 46px;
+  }
+}
+
+@media (min-aspect-ratio: 1 / 1) and (max-width: 1080px) {
+  div.background {
+    background-position-x: 0;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+html {
+  max-height: 100vh;
+  height: 100%;
+  font-size: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  font-size: 14px;
+}
+
+main {
+  height: 100%;
+  position: relative;
+}
+
+header {
+  background-color: white;
+  padding: 0 1.25rem;
+  height: 4.125rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a.home {
+  display: flex;
+}
+
+header a.home img.logo-pic {
+  box-sizing: content-box;
+  height: 2.5rem;
+  padding-bottom: 0.3125rem;
+}
+
+header ul.nav li {
+  display: inline;
+}
+
+header ul.nav .about-link,
+header ul.nav .how-link {
+  padding-right: 1.0625rem;
+}
+
+.content-container {
+  height: calc(100% - 4.125rem);
+  overflow: visible;
+  padding: 0 1.25rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container .move-content {
+  align-items: start !important;
+  padding-top: 2rem !important;
+  display: none;
+}
+
+.content-container .content {
+  padding: 2.0625rem 1.25rem 0;
+  width: 100%;
+  background: linear-gradient(white 25%, #F2F5FA 75%) fixed;
+}
+
+.content-container .content img.victory {
+  padding: 0 0 2.375rem 0;
+}
+
+.content-container .content h2.header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding-bottom: .875rem;
+}
+
+.content-container .content h2.sucs-header span {
+  display: none;
+}
+
+.content-container .content h2.sucs-header::after {
+  content: "Thanks for subscribing!";
+}
+
+.content-container .content p.info {
+  line-height: 1.625rem;
+  padding-bottom: 1.25rem;
+}
+
+.content-container .content p.sucs-info span {
+  display: none;
+}
+
+.content-container .content p.sucs-info::after {
+  content: "You have successfully subscribed to our email listing. Check your email for the discount code.";
+}
+
+.content-container .content form.send-mail {
+  position: relative;
+}
+
+.content-container .content form.send-mail div.input {
+  position: inherit;
+  border: 1px solid #E3E3E4;
+  background-color: white;
+  height: 3.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0.9375rem 0 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.content-container .content form.send-mail div.input input.mail {
+  font-size: 16px;
+  flex: 1 0;
+  border: 0;
+}
+
+.content-container .content form.send-mail div.input input.mail::placeholder {
+  color: #6A707B;
+  font-weight: 400;
+}
+
+.content-container .content form.send-mail div.input input.mail:focus::placeholder {
+  color: transparent;
+}
+
+.content-container .content form.send-mail div.input button.send {
+  font-size: 24px;
+  color: rgba(19, 24, 33, 0.3);
+  border: 0;
+  padding: 0;
+  background: 0;
+}
+
+.content-container .content form.send-mail div.input::before {
+  content: '';
+  position: absolute;
+  border-left: 4px solid #4066A5;
+  height: calc(100% + 0.125rem);
+  left: -1px;
+  top: -1px;
+}
+
+.content-container .content form.send-mail div.input:focus-within {
+  border: 1px solid #4066A5;
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content form.send-mail div.input:focus-within button.enabled-arrow {
+  color: #4066A5;
+}
+
+.content-container .content form.send-mail div.input:hover {
+  box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content form.send-mail div.spacer {
+  width: 100%;
+  padding-bottom: 0.625rem;
+}
+
+.content-container .content form.send-mail div.error {
+  color: #D42A28;
+  position: relative;
+  font-size: 16px;
+}
+
+.content-container .content form.send-mail div.error::before {
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+  font-size: 19px;
+  font-family: pineapple;
+  content: "";
+}
+
+.content-container .content form.send-mail div.terms-check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 0.875rem;
+  padding-bottom: 1.25rem;
+}
+
+.content-container .content form.send-mail div.terms-check input.terms {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1.6875rem;
+  height: 1.6875rem;
+  appearance: none;
+  border: 0.0625rem solid #E3E3E4;
+  border-radius: 3px;
+  background-color: white;
+  color: white;
+}
+
+.content-container .content form.send-mail div.terms-check input.terms:checked {
+  background-color: #4066A5;
+}
+
+.content-container .content form.send-mail div.terms-check input.terms:checked::before {
+  font-size: .875rem;
+  font-family: pineapple;
+  content: "";
+}
+
+.content-container .content form.send-mail div.terms-check input.terms:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content form.send-mail div.terms-check label.terms-text {
+  padding-top: .125rem;
+  font-size: 114%;
+}
+
+.content-container .content form.send-mail div.terms-check label.terms-text a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: black;
+}
+
+.content-container .content form.send-mail div.terms-check label.terms-text a:hover {
+  color: #4066A5;
+}
+
+.content-container .content form.send-mail div.terms-check label.terms-text a:focus {
+  color: #233759;
+}
+
+.content-container .content .separator {
+  border-bottom: 1px solid #E3E3E4;
+  margin-bottom: 1.3125rem;
+}
+
+.content-container .content ul.social-nav {
+  padding: 0 3rem 0 2.0625rem;
+  display: flex;
+  font-size: 46px;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.content-container .content ul.social-nav li {
+  padding-bottom: 1.8125rem;
+  position: relative;
+}
+
+.content-container .content ul.social-nav li a.facebook:hover,
+.content-container .content ul.social-nav li a.facebook:active {
+  border-radius: 23px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content ul.social-nav li a.facebook:hover span.path1::before {
+  color: #4267B2;
+}
+
+.content-container .content ul.social-nav li a.facebook:hover span.path2::before {
+  color: #4267B2;
+}
+
+.content-container .content ul.social-nav li a.facebook:hover span.path3::before {
+  color: white;
+  opacity: 1;
+}
+
+.content-container .content ul.social-nav li a.facebook:active span.path1::before {
+  color: #2F4A80;
+}
+
+.content-container .content ul.social-nav li a.facebook:active span.path2::before {
+  color: #2F4A80;
+}
+
+.content-container .content ul.social-nav li a.instagram:hover,
+.content-container .content ul.social-nav li a.instagram:active {
+  border-radius: 23px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content ul.social-nav li a.instagram:hover span.path1::before {
+  color: #C13584;
+}
+
+.content-container .content ul.social-nav li a.instagram:hover span.path2::before {
+  color: white;
+  opacity: 1;
+}
+
+.content-container .content ul.social-nav li a.instagram:hover span.path3::before {
+  color: #C13584;
+}
+
+.content-container .content ul.social-nav li a.instagram:active span.path1::before {
+  color: #8F2762;
+}
+
+.content-container .content ul.social-nav li a.instagram:active span.path3::before {
+  color: #8F2762;
+}
+
+.content-container .content ul.social-nav li a.twitter:hover,
+.content-container .content ul.social-nav li a.twitter:active {
+  border-radius: 23px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content ul.social-nav li a.twitter:hover span.path1::before {
+  color: #1DA1F2;
+}
+
+.content-container .content ul.social-nav li a.twitter:hover span.path2::before {
+  color: #1DA1F2;
+}
+
+.content-container .content ul.social-nav li a.twitter:hover span.path3::before {
+  color: white;
+  opacity: 1;
+}
+
+.content-container .content ul.social-nav li a.twitter:active span.path1::before {
+  color: #177FBF;
+}
+
+.content-container .content ul.social-nav li a.twitter:active span.path2::before {
+  color: #177FBF;
+}
+
+.content-container .content ul.social-nav li a.youtube:hover,
+.content-container .content ul.social-nav li a.youtube:active {
+  border-radius: 23px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.content-container .content ul.social-nav li a.youtube:hover span.path1::before {
+  color: #FF0000;
+}
+
+.content-container .content ul.social-nav li a.youtube:hover span.path2::before {
+  color: #FF0000;
+}
+
+.content-container .content ul.social-nav li a.youtube:hover span.path3::before {
+  color: white;
+  opacity: 1;
+}
+
+.content-container .content ul.social-nav li a.youtube:active span.path1::before {
+  color: #CC0000;
+}
+
+.content-container .content ul.social-nav li a.youtube:active span.path2::before {
+  color: #CC0000;
+}
+
+.background {
+  left: 0;
+  top: 4.125rem;
+  z-index: -1;
+  height: calc(100% - 4.125rem);
+  position: absolute;
+  width: 100%;
+  background-image: url("../images/image_summer.png");
+  background-position: -281px, 0;
+  background-size: auto 100%;
+}
+/*# sourceMappingURL=pineapple.css.map */

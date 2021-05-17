@@ -1,0 +1,182 @@
+@media (max-width: 329px) {
+    #content {
+        padding: 0;
+    }
+}
+
+@media (min-width: 801px) {
+    html body {
+        font-size: 16px;
+    }
+
+    html body main div.content-container div.content h2.header {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1080px) {
+    html {
+        font-size: 70% !important;
+    }
+
+    html body {
+        display: flex;
+        font-size: 12px;
+
+        main {
+            width: 42.5rem;
+            background: linear-gradient(white 25%, $light-grey-color 75%, ) fixed;
+
+            header {
+                padding: 6.25rem 3rem 0 6.25rem;
+                height: auto;
+                width: 100%;
+
+                img.logo-text {
+                    display: block;
+                    padding: .625rem 0 0 0.9375rem;
+                }
+
+                ul.nav {
+                    padding-top: .5rem;
+
+                    .about-link,
+                    .how-link {
+                        padding-right: 1.625rem;
+                    }
+                }
+            }
+
+            div.content-container {
+                padding: 0;
+                height: calc(100% - 9.0625rem);
+
+                div.content {
+                    background: 0;
+                    padding: 1.125rem 0 0 8.75rem;
+
+                    h2.header {
+                        font-size: 24px;
+                        padding-bottom: 1.125rem;
+                    }
+
+                    p.info {
+                        line-height: 1.8125rem;
+                        padding-bottom: 3.0625rem;
+                    }
+
+                    p.sucs-info::after {
+                        white-space: pre;
+                        content: "You have successfully subscribed to our email listing. \a Check your email for the discount code.";
+                    }
+
+                    form.send-mail {
+                        div.input {
+                            height: 4.375rem;
+                            width: 41.4375rem;
+                            margin: 0 0 1.65625rem -2.5rem;
+
+                            input.mail {
+                                padding-left: 1.5625rem;
+                            }
+
+                            button.send {
+                                padding-right: 1.5625rem;
+                            }
+                        }
+
+                        div.spacer {
+                            padding-bottom: 1.65625rem;
+                        }
+
+                        .terms-check {
+                            padding-bottom: 3.125rem;
+
+                            .terms-text {
+                                font-size: $mobile-fs;
+                            }
+                        }
+                    }
+
+                    div.separator {
+                        width: 25rem;
+                        margin-bottom: 3.25rem;
+                    }
+
+                    ul.social-nav {
+                        gap: 1.25rem;
+                        padding: 0 8.875rem 0 0;
+
+                        li {
+                            font-size: calc(46px - 10%)
+                        }
+                    }
+
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        div.background {
+            position: static;
+            flex: 1 1;
+            background-position-x: 0;
+            height: 100%;
+        }
+    }
+}
+
+@media(min-width: 1300px) {
+    html {
+        font-size: 85% !important;
+
+        body {
+            font-size: 15px;
+
+            main div.content-container div.content h2.header {
+                font-size: 30px;
+            }
+
+            main div.content-container div.content form.send-mail div.terms-check label.terms-text {
+                font-size: 15px;
+            }
+
+        }
+    }
+}
+
+@media(min-width: 1600px) {
+    html {
+        font-size: 100% !important;
+
+        body {
+            font-size: 16px;
+
+            main {
+                header {
+                    padding: 6.25rem 6.3125rem 0 6.25rem;
+                }
+
+                div.content-container div.content form.send-mail div.terms-check label.terms-text {
+                    font-size: 16px;
+                }
+
+                div.content-container div.content h2.header {
+                    font-size: 32px;
+                }
+
+                div.content-container div.content ul.social-nav li {
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-aspect-ratio:1/1) and (max-width: 1080px) {
+    div.background {
+        background-position-x: 0;
+    }
+}

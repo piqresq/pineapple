@@ -1,0 +1,387 @@
+@import 'variables', 'font', 'utility', 'mq';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+    list-style: none;
+}
+
+html {
+    max-height: 100vh;
+    height: 100%;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    font-size: 14px;
+}
+
+main {
+    height: 100%;
+    position: relative;
+}
+
+header {
+    background-color: white;
+    padding: 0 1.25rem;
+    height: 4.125rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a.home {
+        display: flex;
+
+        img.logo-pic {
+            box-sizing: content-box;
+            height: 2.5rem;
+            padding-bottom: 0.3125rem;
+        }
+    }
+
+    ul.nav {
+        li {
+            display: inline;
+        }
+
+        .about-link,
+        .how-link {
+            padding-right: 1.0625rem;
+        }
+    }
+}
+
+.content-container {
+    height: calc(100% - 4.125rem);
+    overflow: visible;
+    padding: 0 1.25rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .move-content {
+        align-items: start !important;
+        padding-top: 2rem !important;
+        display: none;
+    }
+    .content {
+        padding: 2.0625rem 1.25rem 0;
+        width: 100%;
+        background: linear-gradient(white 25%, $light-grey-color 75%, ) fixed;
+
+        img.victory {
+            padding: 0 0 2.375rem 0;
+        }
+
+        h2.header {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 400;
+            font-size: $mobile-h-fs;
+            padding-bottom: .875rem;
+        }
+
+        h2.sucs-header {
+            span {
+                display: none;
+            }
+
+            &::after {
+                content: "Thanks for subscribing!";
+            }
+        }
+
+        p.info {
+            line-height: 1.625rem;
+            padding-bottom: 1.25rem;
+        }
+
+        p.sucs-info {
+            span {
+                display: none;
+            }
+
+            &::after {
+                content: "You have successfully subscribed to our email listing. Check your email for the discount code.";
+            }
+        }
+
+        form.send-mail {
+            position: relative;
+
+            div.input {
+                position: inherit;
+                border: 1px solid $mid-grey-color;
+                background-color: white;
+                height: 3.75rem;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 0.9375rem 0 1.125rem;
+                margin-bottom: 0.625rem;
+
+                input.mail {
+                    font-size: $desktop-fs;
+                    flex: 1 0;
+                    border: 0;
+
+                    &::placeholder {
+                        color: $dark-grey-color;
+                        font-weight: 400;
+                    }
+
+                    &:focus::placeholder {
+                        color: transparent;
+                    }
+                }
+
+                button.send {
+                    font-size: $mobile-h-fs;
+                    color: rgba($dark-color, 0.3);
+                    border: 0;
+                    padding: 0;
+                    background: 0;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border-left: 4px solid $main-color;
+                    height: calc(100% + 0.125rem);
+                    left: -1px;
+                    top: -1px;
+                }
+
+                &:focus-within {
+                    border: 1px solid $main-color;
+                    box-shadow: 20px 20px 40px rgba(black, 0.1);
+
+                    button.enabled-arrow {
+                        color: $main-color;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 20px 20px 40px rgba(black, 0.1);
+                }
+
+            }
+
+            div.spacer {
+                width: 100%;
+                padding-bottom: 0.625rem;
+            }
+
+            div.error {
+                color: #D42A28;
+                &::before {
+                    position: relative;
+                    top:2px;
+                    margin-right: 4px;
+                    font-size:19px;
+                    font-family: pineapple;
+                    content: $pine-info;
+                }
+                position: relative;
+                font-size:16px;
+            }
+            div.terms-check {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                gap: 0.875rem;
+                padding-bottom: 1.25rem;
+
+                input.terms {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    width: 1.6875rem;
+                    height: 1.6875rem;
+                    appearance: none;
+                    border: 0.0625rem solid $mid-grey-color;
+                    border-radius: 3px;
+                    background-color: white;
+                    color: white;
+
+                    &:checked {
+                        background-color: $main-color;
+
+                        &::before {
+                            font-size: .875rem;
+                            font-family: pineapple;
+                            content:"#{$pine-check}";
+                        }
+                    }
+
+                    &:hover {
+                        box-shadow: 5px 5px 10px rgba(black, 0.1);
+                    }
+                }
+
+                label.terms-text {
+                    padding-top: .125rem;
+                    font-size: 114%;
+
+                    a {
+                        text-decoration: underline;
+                        text-underline-offset: 2px;
+                        color: black;
+
+                        &:hover {
+                            color: $main-color;
+                        }
+
+                        &:focus {
+                            color: $link-click-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        .separator {
+            border-bottom: 1px solid $mid-grey-color;
+            margin-bottom: 1.3125rem;
+        }
+
+        ul.social-nav {
+            padding: 0 3rem 0 2.0625rem;
+            display: flex;
+            font-size: 46px;
+            justify-content: center;
+            gap: 0.625rem;
+
+            li {
+                padding-bottom: 1.8125rem;
+                position: relative;
+
+                a.facebook:hover,
+                a.facebook:active {
+                    border-radius: 23px;
+                    box-shadow: 0 15px 15px rgba(black, 0.1);
+                }
+
+                a.facebook:hover span.path1::before {
+                    color: $fb-hover-color;
+                }
+
+                a.facebook:hover span.path2::before {
+                    color: $fb-hover-color;
+                }
+
+                a.facebook:hover span.path3::before {
+                    color: white;
+                    opacity: 1;
+                }
+
+                a.facebook:active span.path1::before {
+                    color: $fb-click-color;
+                }
+
+                a.facebook:active span.path2::before {
+                    color: $fb-click-color;
+                }
+
+                a.instagram:hover,
+                a.instagram:active {
+                    border-radius: 23px;
+                    box-shadow: 0 15px 15px rgba(black, 0.1);
+                }
+
+                a.instagram:hover span.path1::before {
+                    color: $inst-hover-color;
+                }
+
+                a.instagram:hover span.path2::before {
+                    color: white;
+                    opacity: 1;
+                }
+
+                a.instagram:hover span.path3::before {
+                    color: $inst-hover-color;
+                }
+
+                a.instagram:active span.path1::before {
+                    color: $inst-click-color;
+                }
+
+                a.instagram:active span.path3::before {
+                    color: $inst-click-color;
+                }
+
+                a.twitter:hover,
+                a.twitter:active {
+                    border-radius: 23px;
+                    box-shadow: 0 15px 15px rgba(black, 0.1);
+                }
+
+                a.twitter:hover span.path1::before {
+                    color: $tw-hover-color;
+                }
+
+                a.twitter:hover span.path2::before {
+                    color: $tw-hover-color;
+                }
+
+                a.twitter:hover span.path3::before {
+                    color: white;
+                    opacity: 1;
+                }
+
+                a.twitter:active span.path1::before {
+                    color: $tw-click-color;
+                }
+
+                a.twitter:active span.path2::before {
+                    color: $tw-click-color;
+                }
+
+                a.youtube:hover,
+                a.youtube:active {
+                    border-radius: 23px;
+                    box-shadow: 0 15px 15px rgba(black, 0.1);
+                }
+
+                a.youtube:hover span.path1::before {
+                    color: $yt-hover-color;
+                }
+
+                a.youtube:hover span.path2::before {
+                    color: $yt-hover-color;
+                }
+
+                a.youtube:hover span.path3::before {
+                    color: white;
+                    opacity: 1;
+                }
+
+                a.youtube:active span.path1::before {
+                    color: $yt-click-color;
+                }
+
+                a.youtube:active span.path2::before {
+                    color: $yt-click-color;
+                }
+            }
+        }
+    }
+}
+
+.background {
+    left: 0;
+    top: 4.125rem;
+    z-index: -1;
+    height: calc(100% - 4.125rem);
+    position: absolute;
+    width: 100%;
+    background-image: url("../images/image_summer.png");
+    background-position: -281px, 0;
+    background-size: auto 100%;
+}
